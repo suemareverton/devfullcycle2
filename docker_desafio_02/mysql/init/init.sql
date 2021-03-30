@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS desafio02db;
+
+USE desafio02db;
+
+CREATE TABLE IF NOT EXISTS People (
+    PeopleId INT NOT NULL AUTO_INCREMENT,
+    FirstName VARCHAR(255) NOT NULL,
+    LastName VARCHAR(255) NOT NULL,
+    PRIMARY KEY (PeopleId)
+);
