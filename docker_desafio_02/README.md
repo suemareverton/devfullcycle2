@@ -32,6 +32,8 @@ docker-compose up -d --build
 
 Em seu navegador, acesse: ```http://localhost:8080```
 
+Nas primeiras requisições, o navegador pode retornar o erro ```502 - Bad Gateway```. Aguardar alguns segundos até a inicialização estar completa.
+
 Para remover o ambiente:
 
 ```shellscript
