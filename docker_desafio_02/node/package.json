@@ -1,0 +1,21 @@
+{
+    "name": "docker-desafio02",
+    "version": "1.0.0",
+    "description": "Docker - Desafio 02",
+    "author": "Suemar Everton <suemareverton@gmail.com>",
+    "license": "MIT",
+    "main": "./src/app.js",
+    "scripts": {
+      "start": "node ./src/app.js",
+      "dev": "nodemon ./src/app.js"
+    },
+    "keywords": [
+      "nodejs",
+      "express"
+    ],
+    "dependencies": {
+      "express": "^4.17.1",
+      "mysql": "^2.18.1",
+      "nodemon": "^2.0.7"
+    }
+  }
