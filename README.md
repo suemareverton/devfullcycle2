@@ -7,3 +7,4 @@
 #### Docker
 
 - [Desafio 01](docker_desafio_01/)
+- [Desafio 02](docker_desafio_02/)
