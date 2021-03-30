@@ -1,10 +1,10 @@
 version: '3'
 
-services: 
-
+services:
+ 
   app:
     build: 
-      context: node
+      context: ./node
     container_name: app
     entrypoint: dockerize -wait tcp://db:3306 -timeout 20s docker-entrypoint.sh
     command: npm run dev # start
@@ -35,6 +35,15 @@ services:
     networks: 
       - desafio02-network
 
+  nginx:
+    build:
+      context: ./nginx
+    container_name: nginx
+    restart: always
+    ports:
+      - "8080:80"
+    networks: 
+      - desafio02-network
 
 networks: 
   desafio02-network:

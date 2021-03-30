@@ -24,8 +24,16 @@ Gerar o docker-compose de uma forma que bastará executar: ```docker-compose up 
 
 ### Para executar o projeto
 
-A partir deste diretório:
+Inicie o ambiente:
 
 ```shellscript
-docker-compose up -d
+docker-compose up -d --build
+```
+
+Em seu navegador, acesse: ```http://localhost:8080```
+
+Para remover o ambiente:
+
+```shellscript
+docker-compose down
 ```
